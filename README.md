@@ -1,4 +1,4 @@
-# Universal Robotics Desktop
+# Universal Robots Desktop
 
 **A visual desktop application for exploring Universal Robots e-Series robots and simulators.**
 
