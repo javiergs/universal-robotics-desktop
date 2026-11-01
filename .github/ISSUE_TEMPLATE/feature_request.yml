@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest an improvement to Universal Robots Desktop.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or learning goal
+      description: What should the application help you do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior
+      description: Describe the desired interface or behavior, including simulator use when applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Robot safety considerations
+      description: If this involves robot motion or connectivity, describe the expected safeguards.
