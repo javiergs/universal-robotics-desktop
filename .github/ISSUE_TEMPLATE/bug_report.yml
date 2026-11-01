@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a problem with a released Universal Robots Desktop build.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Application version
+      description: Use the version shown by the installed application, if available.
+      placeholder: "e.g., beta version or not yet released"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system
+      placeholder: "e.g., macOS 15, Windows 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: robot
+    attributes:
+      label: Robot environment
+      options:
+        - URSim
+        - Physical Universal Robots controller
+        - Offline / no robot connected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe what you did, what you expected, and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: Attach screenshots or sanitized logs. Do not include credentials or sensitive network details.
